@@ -15,7 +15,7 @@ main(){
 		printf("Digite sua frase: ");
 		gets(frase);
 		
-		for(i = 0; i < (sizeof(frase)); i++)
+		for(i = 0; frase[i]; i++)
 			putc(frase[i], p);
 	}
 	fclose(p);
